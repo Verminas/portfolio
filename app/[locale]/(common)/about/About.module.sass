@@ -1,0 +1,36 @@
+@use '@/app/variables' as *
+
+.wrapper
+  max-width: 70%
+  position: relative
+  gap: 10px
+
+  &:before
+    display: block
+    position: fixed
+    content: url("../../../../public/dashboard.svg")
+    right: -10%
+    top: 0
+    z-index: -1
+    opacity: 0.8
+
+  @media screen and (max-width: $width-tablet)
+    max-width: 100%
+    &::before
+      display: none
+
+
+
+.wrapperBlur
+  padding: 5px
+  backdrop-filter: blur(5px)
+  border-radius: 10px
+
+// красивый стиль стекла для какой-нибудь формы
+//background: rgb(61 61 61 / 30%);
+//  backdrop-filter: blur(10px);
+//  border-radius: 10px;
+//  border: 1px solid rgba(255, 255, 255, 0.18);
+//  box-shadow: 0 8px 32px 0 #75757538;
+//  margin: 20px;
+//  padding: 20px;

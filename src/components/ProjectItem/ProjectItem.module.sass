@@ -1,0 +1,83 @@
+@use '@/app/variables' as *
+
+$wrapper-border-radius: 15px
+
+.wrapper
+  max-width: 370px
+  position: relative
+  backdrop-filter: blur(5px)
+  border-radius: $wrapper-border-radius
+  box-shadow: 2px 2px 100px 0 $box-shadow-color-main-light-theme
+  gap: 0
+
+  font-weight: 300
+  line-height: 26px
+  text-align: left
+
+  &.light
+    box-shadow: 2px 2px 100px 0 $box-shadow-color-main-light-theme
+  &.dark
+    box-shadow: 2px 2px 100px 0 $box-shadow-color-main-dark-theme
+
+.image
+  border-top-right-radius: $wrapper-border-radius
+  border-top-left-radius: $wrapper-border-radius
+  width: 100%
+  max-height: 260px
+  object-fit: cover
+  @media screen and (max-width: $width-mobile)
+    max-height: 200px
+
+.wrapperInfo
+  padding: clamp(10px, 2.5vw, 25px) clamp(10px, 2.5vw, 30px)
+  gap: clamp(10px, 2.5vw, 15px)
+  background-color: inherit
+  border-bottom-right-radius: $wrapper-border-radius
+  border-bottom-left-radius: $wrapper-border-radius
+
+  &.light
+    background-color: inherit
+  &.dark
+    background-color: $background-color-info-dark-theme
+
+.title
+  &.light
+    color:  $text-color-dop-light-theme
+  &.dark
+    color:  $text-color-dop-dark-theme
+
+.description
+  min-height: 105px
+  display: -webkit-box
+  -webkit-line-clamp: 4
+  -webkit-box-orient: vertical
+  overflow: hidden
+  text-overflow: ellipsis
+  font-size: clamp(12px, 2.5vw, 14px)
+
+  @media screen and (max-width: $width-mobile)
+    min-height: 75px
+    -webkit-line-clamp: 3
+
+.techStack
+  font-size: clamp(12px, 2.5vw, 14px)
+
+.link
+  position: relative
+  padding-left: 25px
+  font-size: clamp(10px, 2.5vw, 12px)
+  &.light
+    color:  $text-color-dop-light-theme
+  &.dark
+    color:  $text-color-dop-dark-theme
+
+  & svg
+    width: 16px
+    height: 16px
+    position: absolute
+    left: 0
+    bottom: 5px
+    &.light
+      fill:  $text-color-dop-light-theme
+    &.dark
+      fill:  $text-color-dop-dark-theme

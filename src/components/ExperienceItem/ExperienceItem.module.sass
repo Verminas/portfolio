@@ -1,0 +1,84 @@
+@use '@/app/variables' as *
+
+.wrapper
+  width: 100%
+  border-bottom: 2px solid $border-color-main
+  padding-bottom: 10px
+  //flex-wrap: wrap
+
+  @media screen and (max-width: $width-mobile)
+    flex-direction: column
+    align-items: flex-start
+
+.mainInfo
+  position: relative
+  gap: 5px
+
+  & svg
+    width: 20px
+    height: 20px
+    position: absolute
+    bottom: 5px
+    left: 0
+
+.title
+  font-size: clamp(16px, 2.5vw, 20px)
+  font-weight: 400
+  line-height: 28px
+  letter-spacing: 1px
+  text-align: left
+
+
+.place
+  display: inline-block
+  padding-left: 35px
+  color: $text-color-secondary
+
+  font-size: clamp(12px, 2.5vw, 16px)
+  font-weight: 500
+  line-height: 28px
+  text-align: left
+
+
+.secondaryInfo
+  position: relative
+  gap: 5px
+
+  & svg
+    width: 20px
+    height: 20px
+    position: absolute
+    bottom: 5px
+    left: 0
+
+
+.kind
+  display: inline-block
+  align-self: flex-end
+  padding: 5px clamp(10px, 2.5vw, 20px)
+  max-width: 60%
+  min-height: 24px
+  border-radius: 100px
+  background-color: $background-color-kind-experience
+  color: $text-color-kind-experience
+
+  font-size: clamp(10px, 2.5vw, 14px)
+  font-weight: 600
+  line-height: 26px
+  text-align: center
+
+  @media screen and (max-width: $width-mobile)
+    align-self: flex-start
+
+
+
+.period
+  font-size: clamp(12px, 2.5vw, 16px)
+  font-weight: 500
+  line-height: 28px
+  letter-spacing: 1px
+  text-align: left
+  padding-left: 35px
+  color: $text-color-secondary
+
+

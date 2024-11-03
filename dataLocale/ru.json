@@ -1,0 +1,113 @@
+{
+  "HomePage": {
+    "hello": "Привет",
+    "myName": "Меня зовут",
+    "name": "Юлия Веремеева",
+    "work": "Фронтенд разработчик, Веб разработчик, Реакт разработчик",
+    "tagInfo": "Фронтенд разработчик, фрилансер, React разработчик, портфолио, Frontend, React, developer, freelancer",
+    "downloadCV": "Скачать резюме"
+  },
+  "About": {
+    "AboutMe": {
+      "text": "Фронтенд разработчик с опытом работы 1+ года в создании SPA на TypeScript, JavaScript, React, Redux, Redux Toolkit и RTK Query. Активно изучаю Next.js и React Native. Постоянно совершенствую навыки, читаю профессиональную литературу, решаю задачи на Codewars и Leetcode. Готов к новым вызовам и обсуждению возможной совместной работы.",
+      "sectionTitle": "Обо мне"
+    },
+    "WorkExperience": {
+      "sectionTitle": "Опыт работы",
+      "experience": [
+        {
+          "title": "Фронтенд разработчик",
+          "place": "IT-incubator",
+          "kind": "Стажировка",
+          "period": "Ноябрь 2024 - по наст. время"
+        },
+        {
+          "title": "Веб разработчик",
+          "place": "Фриланс",
+          "kind": "Полный день",
+          "period": "Август 2023 - Сентябрь 2024"
+        }
+      ]
+    },
+
+    "Education": {
+      "sectionTitle": "Образование",
+      "experience": [
+        {
+          "title": "Фронтенд разработчик",
+          "place": "IT-incubator",
+          "kind": "Полный день",
+          "period": "Апрель 2024 - Октябрь 2024"
+        },
+        {
+          "title": "Химик. Биофармахимик",
+          "place": "БГУ, Химический факультет",
+          "kind": "Полный день",
+          "period": "Сентябрь 2014 - Июнь 2019"
+        }
+      ]
+    }
+  },
+  "Skills": {
+    "sectionTitle": "Мои навыки",
+    "text": "Основной технологический стек"
+  },
+  "Projects": {
+    "sectionTitle": "Проекты",
+    "text": "Мои недавние проекты",
+    "projects": [
+      {
+        "id": "1",
+        "title": "Тудулист",
+        "description": "Приложение для управления задачами и повышения продуктивности, можно добавлять задачи, отмечать их выполнение и следить за прогрессом выполнения целей.",
+        "techStack": "TypeScript, React, Redux Toolkit, Formik, MUI, Storybook",
+        "demoUrl": "https://todolist-hazel-delta.vercel.app/",
+        "codeUrl": "https://github.com/Verminas/todolist"
+      },
+      {
+        "id": "2",
+        "title": "Социальная сеть",
+        "description": "Проект веб-приложения социальной сети, где пользователи могут искать и добавлять друзей, общаться в чате, просматривать мировые новости.",
+        "techStack": "TypeScript, React, Redux Toolkit, React Hook Form, Ant Design",
+        "demoUrl": "https://react-social-network-gamma.vercel.app/",
+        "codeUrl": "https://github.com/Verminas/react-social-network"
+      }
+    ],
+    "techStack": "Стек технологий",
+    "livePreview": "Демо",
+    "viewCode": "Код"
+  },
+  "Contact": {
+    "title": "По всем вопросам пишите мне",
+    "form": {
+      "errors": {
+        "emailRequired": "Необходимо указать адрес электронной почты",
+        "emailInvalid": "Неверный адрес почты",
+        "nameRequired": "Необходимо указать имя",
+        "subjectRequired": "Необходимо указать тему",
+        "messageRequired": "Необходимо указать сообщение",
+        "messageIsShort": "Сообщение должно быть минимум из 10 символов"
+      },
+      "placeholders": {
+        "name": "Имя",
+        "email": "Почта",
+        "subject": "Тема",
+        "message": "Ваше сообщение"
+      },
+      "buttonSubmit": "Отправить"
+    }
+  },
+  "Navigation": {
+    "Home": "Главная",
+    "About": "Обо мне",
+    "Tech Stack": "Навыки",
+    "Projects": "Проекты",
+    "Contacts": "Контакты"
+  },
+  "Metadata": {
+    "title": "Фронтенд разработчик | Фрилансер | Открыта для новых предложений",
+    "description": "Фронтенд разработчик с технологическим стеком: React, Next JS, JavaScript, TypeScript, Redux, Redux Toolkit",
+    "keywords": "Frontend разработчик, React разработчик, Next JS разработчик, Фрилансер"
+  }
+}
+

@@ -1,0 +1,19 @@
+@use '../../../app/variables' as *
+
+.footerWrap
+  position: relative
+  min-height: 50px
+
+.footer.wrapper
+  @media screen and (max-width: $width-tablet)
+    flex-direction: column
+
+.social.media
+  display: none
+  @media screen and (max-width: $width-tablet)
+    display: flex
+    justify-content: center
+
+.link
+  @media screen and (max-width: $width-mobile)
+    font-size: clamp(12px, 2.4vw, 26px)

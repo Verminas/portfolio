@@ -1,0 +1,16 @@
+@use '@/app/variables' as *
+
+.text.title
+  font-size: clamp(12px, 2.5vw, 40px)
+  text-align: center
+  line-height: 20px
+
+.colorText.email
+  white-space: nowrap
+  background: linear-gradient(45deg, $text-gradient-start, $text-gradient-end) text
+  color: transparent
+  font-size: clamp(12px, 3vw, 44px)
+
+.link
+  &:hover
+    transform: scale(1) !important

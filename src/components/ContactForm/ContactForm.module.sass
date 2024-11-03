@@ -1,0 +1,37 @@
+@use '@/app/variables' as *
+
+$transition: all .4s ease-in-out
+
+.form
+  max-width: 400px
+  min-width: 200px
+  width: 100%
+  display: flex
+  flex-direction: column
+  gap: 12px
+  align-items: center
+  justify-content: center
+  padding: 20px
+  box-shadow: 1px 1px 50px 0 rgba(0, 0, 0, 0.05)
+  border-radius: 15px
+  margin-top: clamp(10px, 3vw, 30px)
+  backdrop-filter: blur(5px)
+
+.submitButton
+  min-width: 100px
+  max-width: 180px
+  width: 100%
+  position: relative
+
+  & svg
+    fill: $text-color-button
+    position: absolute
+    bottom: 10px
+    right: 10%
+    transform: translateY(-20px)
+    opacity: 0
+    transition: $transition
+
+  &.isSend svg
+    transform: translateY(0)
+    opacity: 1

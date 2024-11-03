@@ -1,0 +1,111 @@
+{
+  "HomePage": {
+    "hello": "Hello",
+    "myName": "My name is",
+    "name": "Julia Veremeeva",
+    "work": "Frontend developer, Web developer, React developer",
+    "tagInfo": "Frontend developer, portfolio, React, developer, freelancer",
+    "downloadCV": "Download CV"
+  },
+  "About": {
+    "AboutMe": {
+      "text": "Frontend developer with 1+ year of experience in building SPAs using TypeScript, JavaScript, React, Redux, Redux Toolkit, and RTK Query. Actively studying Next.js and React Native. Constantly improving skills, reading professional literature, solving problems on Codewars and Leetcode. Ready for new challenges and discussing potential collaboration.",
+      "sectionTitle": "About Me"
+    },
+    "WorkExperience": {
+      "sectionTitle": "Work Experience",
+      "experience": [
+        {
+          "title": "Frontend Developer",
+          "place": "IT-incubator",
+          "kind": "Internship",
+          "period": "November 2024 - Present"
+        },
+        {
+          "title": "Web Developer",
+          "place": "Freelance",
+          "kind": "Full-time",
+          "period": "August 2023 - September 2024"
+        }
+      ]
+    },
+    "Education": {
+      "sectionTitle": "Education",
+      "experience": [
+        {
+          "title": "Frontend Developer",
+          "place": "IT-incubator",
+          "kind": "Full-time",
+          "period": "April 2024 - October 2024"
+        },
+        {
+          "title": "Chemist. Biochemist",
+          "place": "BSU, Faculty of Chemistry",
+          "kind": "Full-time",
+          "period": "September 2014 - June 2019"
+        }
+      ]
+    }
+  },
+  "Skills": {
+    "sectionTitle": "My Tech Stack",
+    "text": "Technologies I’ve been working with recently"
+  },
+  "Projects": {
+    "sectionTitle": "Projects",
+    "text": "My recent projects",
+    "projects": [
+      {
+        "id": "1",
+        "title": "TodoList",
+        "description": "An application for task management and productivity enhancement, where you can add tasks, mark them as completed, and track progress towards goals.",
+        "techStack": "TypeScript, React, Redux Toolkit, Formik, MUI, Storybook",
+        "demoUrl": "https://todolist-hazel-delta.vercel.app/",
+        "codeUrl": "https://github.com/Verminas/todolist"
+      },
+      {
+        "id": "2",
+        "title": "Social Network",
+        "description": "A web application project of a social network where users can search and add friends, communicate in chat, and view world news.",
+        "techStack": "TypeScript, React, Redux Toolkit, React Hook Form, Ant Design",
+        "demoUrl": "https://react-social-network-gamma.vercel.app/",
+        "codeUrl": "https://github.com/Verminas/react-social-network"
+      }
+    ],
+    "techStack": "Tech Stack",
+    "livePreview": "Live Preview",
+    "viewCode": "View Code"
+  },
+  "Contact": {
+    "title": "For any questions please mail me",
+    "form": {
+      "errors": {
+        "emailRequired": "Email is required",
+        "emailInvalid": "Email is invalid",
+        "nameRequired": "Name is required",
+        "subjectRequired": "Subject is required",
+        "messageRequired": "Message is required",
+        "messageIsShort": "Message must be at least 10 characters"
+      },
+      "placeholders": {
+        "name": "Name",
+        "email": "Email",
+        "subject": "Subject",
+        "message": "Your message"
+      },
+      "buttonSubmit": "Submit"
+    }
+  },
+  "Navigation": {
+    "Home": "Home",
+    "About": "About",
+    "Tech Stack": "Tech Stack",
+    "Projects": "Projects",
+    "Contacts": "Contacts"
+  },
+  "Metadata": {
+    "title": "Frontend Developer | Freelancer | Open for work",
+    "description": "Frontend developer ready to work, with tech stack: React, Next JS, JavaScript, TypeScript, Redux, Redux Toolkit",
+    "keywords": "Frontend developer, React developer, Next JS developer, Freelancer, Open for work"
+  }
+}

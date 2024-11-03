@@ -1,0 +1,68 @@
+@use '@/app/variables' as *
+
+$transition: all .4s ease-in-out
+$header-height: 50px
+
+.navWrapper
+  display: none
+  position: fixed
+  top: 10px
+  right: 15px
+  z-index: 100
+  @media (max-width: 576px)
+    display: flex
+
+.navigation
+  width: 100%
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: center
+  gap: clamp(10px, 2.5vh, 20px)
+  font-size: clamp(20px, 3vw, 30px)
+  padding: calc($header-height + 5px) 30px 20vh
+  position: fixed
+  z-index: -1
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  opacity: 0
+  backdrop-filter: blur(5px)
+  transform: translateX(100%)
+  transition: $transition
+
+  &.dark
+    background-color: $burger-navigation-background-dark-theme
+    box-shadow: 0 10px 20px 15px $burger-navigation-background-dark-theme
+    & a::before
+      background-color: $burger-navigation-background-link-dark-theme
+
+  &.light
+    background-color: $burger-navigation-background-light-theme
+    & a::before
+      background-color: $burger-navigation-background-link-light-theme
+
+
+  & a
+    position: relative
+    background: linear-gradient(45deg, $text-gradient-start, $text-gradient-end) text
+    color: transparent
+
+  & a::before
+    content: ''
+    position: absolute
+    width: calc(100% + 30px)
+    min-width: 140px
+    height: calc(100% + 15px)
+    z-index: -10
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    border-radius: 10px
+
+.open
+  transform: translateX(0)
+  opacity: 1
+  z-index: 10

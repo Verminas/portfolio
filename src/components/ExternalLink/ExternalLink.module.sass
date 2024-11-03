@@ -1,0 +1,24 @@
+@use '@/app/variables' as *
+
+$transition: all .4s ease-in-out
+
+.link
+  display: flex
+  justify-content: center
+  align-items: center
+  transition: $transition
+  &.dark svg
+    fill: $text-color-main-dark-theme
+  &.light svg
+    fill: $text-color-main-light-theme
+
+  @media (hover: hover)
+    &:hover
+      transform: scale(1.2)
+      white-space: nowrap
+      background: linear-gradient(45deg, $text-gradient-start, $text-gradient-end) text
+      color: transparent
+      & svg
+        transition: $transition
+        fill: $text-gradient-end
+

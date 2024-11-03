@@ -1,0 +1,53 @@
+@use '@/app/variables' as *
+
+$transition: all .3s ease-in-out
+
+.label
+  min-height: 50px
+  width: 100%
+  position: relative
+
+  &:last-of-type
+    margin-bottom: 20px
+
+  & textarea
+    resize: none
+    height: 80px
+    & + .errorVisible
+      transform: translateY(10px)
+.item
+  width: 100%
+  height: 30px
+  padding: 8px 12px
+  outline: none
+  border: 1px solid $text-color-main-light-theme
+  border-radius: 5px
+  font-family: $font-family-main
+
+  &.light
+    color:  $text-color-title-light-theme
+  &.dark
+    color:  $text-color-title-dark-theme
+
+  &:focus-visible
+    outline: 1px solid $text-color-title-dark-theme
+    border: 1px solid $text-color-title-dark-theme
+.error
+  color: $skill-gradient-middle
+  font-size: 10px
+  text-align: left
+  position: absolute
+  left: 0
+  bottom: 0
+
+  opacity: 0
+  z-index: -1
+  transform: translateY(-20px)
+  transition: $transition
+
+
+.errorVisible
+  transform: translateY(0)
+  opacity: 1
+  z-index: 1
+
