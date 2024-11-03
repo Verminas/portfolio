@@ -3,6 +3,8 @@ import Wrapper from "@/src/components/Wrapper/Wrapper";
 import { SectionTitle } from "@/src/components/SectionTitle/SectionTitle";
 import styles from './Projects.module.sass'
 import { ProjectItem } from "@/src/components/ProjectItem/ProjectItem";
+import { MotionItem } from "@/src/components/framer-motion/MotionElements/MotionItem";
+import { MotionElements } from "@/src/components/framer-motion/MotionElements/MotionElements";
 
 type ProjectItem = {
   id: string
@@ -24,15 +26,16 @@ export default function Projects() {
 
   const projectsValues = Object.values(dataProjects.projects || {}) as ProjectItem[];
   const projectsElements = projectsValues.map((item, index) => (
-    <ProjectItem
-      codeUrl={item.codeUrl}
-      demoUrl={item.demoUrl}
-      description={item.description}
-      techStack={item.techStack}
-      title={item.title}
-      id={item.id}
-      key={item.title + index}
-    />
+    <MotionItem  key={item.title + index} index={index} >
+      <ProjectItem
+        codeUrl={item.codeUrl}
+        demoUrl={item.demoUrl}
+        description={item.description}
+        techStack={item.techStack}
+        title={item.title}
+        id={item.id}
+      />
+    </MotionItem>
   ));
 
   return (
@@ -41,7 +44,11 @@ export default function Projects() {
         <SectionTitle>{t("sectionTitle")}</SectionTitle>
         <p>{t("text")}</p>
       </Wrapper>
-      <Wrapper justifyContent={'space-evenly'} className={styles.projectsWrapper}>{projectsElements}</Wrapper>
+      <Wrapper justifyContent={'space-evenly'} className={styles.projectsWrapper}>
+        <MotionElements>
+          {projectsElements}
+        </MotionElements>
+        </Wrapper>
     </Wrapper>
   );
 }
