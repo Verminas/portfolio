@@ -12,7 +12,7 @@ export const DownloadFile = ({className, children}: Props) => {
   const buttonClassName = styles.button + ' ' + (className ?? '')
 
   const onDownloadFile = () => {
-    const pdfUrl = "/files/cvExample.pdf"
+    const pdfUrl = "/files/cv.pdf"
     const link = document.createElement("a");
     link.href = pdfUrl;
     link.download = "frontend-veremeeva-cv.pdf"; // specify the filename
