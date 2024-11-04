@@ -1,5 +1,15 @@
 @use '@/app/variables' as *
 
+@keyframes gradient
+  from
+    transform: rotate(0)
+
+  to
+    transform: rotate(360deg)
+
+
+
+
 .wrapper.home
   width: 100%
   height: 100%
@@ -21,19 +31,41 @@
     min-width: 270px
 
 
+.imageWrapper
+  max-width: 300px
+  min-width: 150px
+  max-height: 300px
+  min-height: 150px
+  border-radius: 50%
+  position: relative
+  @media screen and (max-width: $width-tablet)
+    max-width: 180px
+    max-height: 180px
+
+  &::before
+    content: ""
+    animation: gradient 8s linear infinite
+    position: absolute
+    inset: 0
+    border-radius: 50%
+    padding: 10px
+    background: linear-gradient(45deg, $text-gradient-start, $text-gradient-end)
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)
+    -webkit-mask-composite: xor
+    mask-composite: exclude
+
 .image
   object-fit: cover
   max-width: 300px
   min-width: 150px
   max-height: 300px
   min-height: 150px
-  border: 10px solid deeppink
-  //border-image: linear-gradient(45deg, $text-gradient-start, $text-gradient-end)
-  //border-image-slice: 1
   border-radius: 50%
+  box-shadow: -1px 1px 20px 0px $react-particles-color
   @media screen and (max-width: $width-tablet)
     max-width: 180px
     max-height: 180px
+
 .typeText
   min-height: 65px
   @media screen and (max-width: $width-mobile)

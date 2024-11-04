@@ -29,7 +29,9 @@ export default function Home() {
         </MotionItem>
         <MotionItem key={'photo'} initial={{ opacity: 0, x: 100 }}>
           <Wrapper direction={"column"} alignItems={"center"} justifyContent={"center"}>
-            <Image src={photo} alt={"my photo"} className={styles.image} />
+            <div className={styles.imageWrapper}>
+              <Image src={photo} alt={"my photo"} className={styles.image} />
+            </div>
             <DownloadFile>{t("downloadCV")}</DownloadFile>
           </Wrapper>
         </MotionItem>
