@@ -1,7 +1,7 @@
 export const contactsInfo = {
   emailJs: {
-    serviceId: 'service_jbw1b5h',
-    templateId: 'template_89foq3h',
-    pubKey: 'GkQwf6QoLtinZ-9EI',
+    serviceId: process.env.NEXT_PUBLIC_EMAILJS_SERVICEID || '',
+    templateId: process.env.NEXT_PUBLIC_EMAILJS_TEMPLATEID || '',
+    pubKey: process.env.NEXT_PUBLIC_EMAILJS_PUBKEY || '',
   }
 }
